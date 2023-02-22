@@ -1,0 +1,9 @@
+.register-container {
+  .fields-container{
+    width: 100%;
+    .credentials{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
