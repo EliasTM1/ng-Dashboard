@@ -1,9 +1,81 @@
-.register-container {
-  .fields-container{
-    width: 100%;
-    .credentials{
-      display: flex;
-      flex-direction: column;
+.form-container{
+p{
+  margin-top: .5rem;
+  span{
+    color: #2196F3;
+    cursor: pointer;
+    margin-left: .1rem;
+    &:hover{
+      text-decoration: underline;
     }
+  }
+}
+  form{
+    margin-bottom: 1rem;
+    .fields-container{
+      margin-bottom: 1rem;
+      input {
+        width: 48%;
+      }
+    }
+    .credentials{
+      input {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .terms {
+      display: flex;
+      label{
+        margin-bottom: .4rem;
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px ;
+    margin-bottom: 10px ;
+
+    hr {
+      flex: 1;
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 0 10px;
+    }
+
+    span {
+      color: #999;
+      font-weight: bold;
+      font-size: .8rem;
+    }
+
+  }
+
+  .social-media {
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    button {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+      border: 1px solid #2196F3;
+      background-color: white;
+      color: black;
+      font-weight: 500;
+      font-size: .8rem;
+    }
+    img {
+      margin-right: .5rem;
+    }
+  }
+
+  #create{
+    display: flex;
+    justify-content: center;
   }
 }

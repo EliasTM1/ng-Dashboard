@@ -7,13 +7,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthComponent } from './auth.component';
 import { AuthRoutingModule } from './auth.routing';
+import { SharedModule } from '../shared/shared.module';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { VerifiedComponent } from './verified/verified.component';
+import { CheckEmailComponent } from './check-email/check-email.component';
 
 
 @NgModule({
   declarations: [
     AuthComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgotPasswordComponent,
+    ResetPasswordComponent,
+    VerifiedComponent,
+    CheckEmailComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +30,8 @@ import { AuthRoutingModule } from './auth.routing';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    SharedModule
   ]
 })
 export class AuthModule { }

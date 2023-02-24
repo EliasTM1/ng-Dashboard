@@ -1,10 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
-// SOME
-// This will be revert
+@import '~primeicons/primeicons.css';
+@import '~primeng/resources/themes/saga-blue/theme.css';
+@import '~primeng/resources/primeng.min.css';
 @import "./assets/styles/main.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Archivo Black', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
 }

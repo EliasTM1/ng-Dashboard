@@ -1,14 +1,36 @@
-<div class="register-container">
+<div class="form-container">
   <h1>Create account</h1>
   <p>Already have an account? <span>Login</span></p>
-
+<form [formGroup]="registerForm">
   <div class="fields-container">
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="First Name">
-    <div class="credentials">
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="First Name">
-    </div>
+    <input type="text" placeholder="First Name" pInputText>
+    <input type="text" placeholder="Last Name" pInputText>
   </div>
-  <input type="checkbox" >
+  <div class="credentials">
+    <input type="text" placeholder="Email" pInputText>
+    <input type="text" placeholder="Password" pInputText>
+  </div>
+  <div class="terms">
+    <p-checkbox type="checkbox" />
+    <label for="" >I agree to Fortuna Capital Terms of service and Privacy policy</label>
+  </div>
+</form>
+
+  <button pButton id="create">Create Account</button>
+
+  <div class="divider">
+    <hr>
+    <span>or</span>
+    <hr>
+  </div>
+  <div class="social-media">
+    <button pButton >
+      <img src="../../../assets/icons/googleIcon.png" height="25rem" alt="No image">
+      Continue with Google
+    </button>
+    <button pButton >
+      <img src="../../../assets/icons/appleIcon.png" height="25rem" alt="No image">
+      Continue with Apple
+    </button>
+  </div>
 </div>
