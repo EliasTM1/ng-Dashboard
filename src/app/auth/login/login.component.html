@@ -1,13 +1,13 @@
 <div class="form-container">
   <h1>Welcome Back</h1>
-  <p>Don't have an account?<span>Sign up</span></p>
+  <p>Don't have an account?<span (click)="goToRegister()">Sign up</span></p>
   <form>
     <div class="credentials">
       <input type="text" placeholder="First Name" pInputText>
       <input type="password" placeholder="Password" pInputText>
     </div>
-    <span>
-      Forgot Passowrd
+    <span (click)="forgotPassword()">
+      Forgot Password
     </span>
   </form>
   <button pButton id="login">Login</button>

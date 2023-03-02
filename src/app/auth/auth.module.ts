@@ -14,6 +14,7 @@ import { VerifiedComponent } from './verified/verified.component';
 import { CheckEmailComponent } from './check-email/check-email.component';
 
 
+
 @NgModule({
   declarations: [
     AuthComponent,
@@ -31,7 +32,7 @@ import { CheckEmailComponent } from './check-email/check-email.component';
     ReactiveFormsModule,
     HttpClientModule,
     AuthRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class AuthModule { }

@@ -1,6 +1,6 @@
 <div class="form-container">
   <h1>Create account</h1>
-  <p>Already have an account? <span>Login</span></p>
+  <p>Already have an account? <span (click)="goToLogin()">Login</span></p>
 <form [formGroup]="registerForm">
   <div class="fields-container">
     <input type="text" placeholder="First Name" pInputText>

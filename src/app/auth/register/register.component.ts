@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -14,4 +15,15 @@ export class RegisterComponent {
     password: new FormControl('', [Validators.required]),
     usrAgreement : new FormControl(false)
   })
+
+  constructor(
+    private router: Router
+  ) {
+
+  }
+
+  goToLogin() {
+    this.router.navigate(["auth/login"])
+  }
+
 }
